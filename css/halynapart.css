@@ -1,0 +1,18 @@
+.blue-part{
+    background-color:rgb(68, 68, 192);
+    color: #fff;
+}
+
+.yellow-part{
+    background-color: rgb(247, 180, 57);
+    color: white;
+}
+
+.black-part {
+    background-color: rgb(41, 39, 39);
+    color: #fff;
+}
+
+.little-grey-text{
+    color: rgba(255,255,255,0.78);
+}
