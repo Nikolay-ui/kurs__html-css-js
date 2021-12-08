@@ -1,23 +1,53 @@
 .blue-part {
-    background-color: rgb(68, 68, 192);
+    background-image: url("https://res2.weblium.site/res/60b5d551c422d50022b385d0/60c34cd15f75ef0021bf4d75");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
 }
 .button-buy-now-blue-part {
-    background-color: yellow;
+    background-color: #f2cb1f;
     color: black;
-    padding:20px 30px ;
-    
-   
+    padding:20px 40px ;
+}
+.button-all-headphones-blue-part {
+    background-color: #2877b6;
+    color: white;
+    padding:20px 40px ;
 }
 
 .yellow-part {
-    background-color: rgb(247, 180, 57);
+    background-image: url("https://res2.weblium.site/res/60b5d551c422d50022b385d0/60c34df96a5c470021993cc2");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
+}
+.button-buy-now-yellow-part{
+    background-color: #2877b6;
+    color: white;
+    padding:20px 40px ;
+}
+.button-all-headphones-yellow-part{
+    background-color: #2a2a2a;
+    color: white;
+    padding:20px 40px ;
 }
 
 .black-part {
-    background-color: rgb(41, 39, 39);
+    background-image: url("https://res2.weblium.site/res/60b5d551c422d50022b385d0/60c34e2d8c14b50022843779");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
+}
+.button-buy-now-black-part{
+    background-color: #2877b6;
+    color: white;
+    padding:20px 40px ;
+}
+.button-all-headphones-black-part{
+    background-color:#f2cb1f;
+    color: #2a2a2a;
+    padding:20px 40px ;
+}
 }
 
 .little-grey-text {
