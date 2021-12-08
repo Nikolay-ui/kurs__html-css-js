@@ -19,7 +19,7 @@
     min-width: 200px;
     width: 100%;
     flex: 0 2 35%;
-    margin: 10px 10px;
+    margin: 10px 0;
 }
 .hot-offers__title h2 {
     font-size: 34px;
@@ -29,7 +29,7 @@
     min-width: 200px;
     width: 100%;
     flex: 0 1 35%;
-    margin: 10px 10px;
+    margin: 10px 0;
 }
 .hot-offers__text p {
     font-size: 14px;
@@ -43,10 +43,14 @@
     align-self: center;
     max-width: 120px;
     max-height: 80px;
-    background-color: rgb(241, 217, 105);
+    background-color: rgb(242, 203, 31);
     flex: 0 1 20%;
     text-align: center;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 0 10px 10px;
+}
+.hot-offers__button:hover {
+    transition: all ease 0.8s 0s;
+    background-color: #fff;
 }
 .hot-offers__button a {
     font-size: 13px;
@@ -63,21 +67,21 @@
         justify-content: center;
         align-items: center;
         background: #2877b6;
-        padding: 20px 20px;
+        padding: 20px 5px;
     }
     .hot-offers__title {
         max-width: 350px;
         width: 100%;
         font-size: 20px;
         flex: 0 2 40%;
-        margin: 10px 10px;
+        margin: 10px 0;
     }
     .hot-offers__text {
         max-width: 350px;
         width: 100%;
         font-size: 12px;
         flex: 0 1 35%;
-        margin: 10px 10px;
+        margin: 10px 0;
     }
     .hot-offers__button {
         max-width: 350px;
@@ -90,7 +94,7 @@
         background-color: rgb(255, 228, 110);
         flex: 0 1 20%;
         text-align: center;
-        margin: 10px 50px 10px 20px;
+        margin: 10px 0;
     }
 }
 .contacts-form__body {
@@ -102,7 +106,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgb(36, 36, 36);
-    padding: 10px 10px;
+    padding: 10px 0;
 }
 .logo-subscribe {
     max-width: 300px;
@@ -112,7 +116,7 @@
     justify-content: center;
     align-items: center;
     flex: 0 1 30%;
-    margin: 30px 10px;
+    margin: 30px 0;
     padding: 5px 5px;
 }
 .logo-subscribe__logo img {
@@ -132,7 +136,7 @@
     justify-content: center;
     align-items: center;
     flex: 0 1 30%;
-    margin: 30px 10px;
+    margin: 30px 0;
 }
 .contacts-form__contacts span {
     font-size: 12px;
@@ -145,6 +149,10 @@
     font-size: 28px;
     font-weight: 600;
     padding: 20px 10px;
+}
+.contacts-form__contacts a:hover {
+    text-decoration: underline;
+    transition: all ease 0.8s 0s;
 }
 .contacts__number {
     width: 100%;
@@ -170,7 +178,7 @@
     justify-content: center;
     align-items: center;
     flex: 0 1 30%;
-    margin: 30px 10px;
+    margin: 30px 0;
 }
 .form__body button {
     max-width: 100%;
@@ -182,6 +190,11 @@
     background-color: #2670ac;
     padding: 20px 30px;
     margin: 10px 20px;
+}
+.form__body button:hover {
+    transition: all ease 1.2s 0s;
+    background-color: #fff;
+    color: #000;
 }
 .form__body input {
     font-size: 12px;
@@ -293,6 +306,11 @@
     padding: 10px 0;
     text-decoration: none;
     color: rgb(213, 213, 213);
+}
+.footer__links a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: all ease 0.8s 0s;
 }
 .links__line {
     margin: 0 10px;
