@@ -2,6 +2,13 @@
     background-color: rgb(68, 68, 192);
     color: #fff;
 }
+.button-buy-now-blue-part {
+    background-color: yellow;
+    color: black;
+    padding:20px 30px ;
+    
+   
+}
 
 .yellow-part {
     background-color: rgb(247, 180, 57);
