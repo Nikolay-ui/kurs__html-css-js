@@ -39,11 +39,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 900px;
+    width: 100%;
     margin-top: 10px;
     min-width: 0;
     position: relative;
-    padding: 0px 20px;
 }
 .slider__item {
     display: flex;
@@ -94,13 +93,11 @@
 }
 .slider .slick-arrow.slick-prev {
     left: 2.5%;
-    padding: 5px;
     color: #fff;
     background: url("../img/our-customers-and-slider/icons-left-64.png") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
     right: 2.5%;
-    padding: 5px;
     color: #fff;
     background: url("../img/our-customers-and-slider/icons-right-64.png") 0 0 / 100% no-repeat;
 }

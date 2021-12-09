@@ -23,11 +23,3 @@
     padding: 20px 20px;
     color: rgb(85, 85, 85);
 }
-.header-our-customers {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
