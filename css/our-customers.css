@@ -1,0 +1,24 @@
+.our-customers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+}
+.our-customers h2 {
+    font-size: 38px;
+    font-weight: 750;
+    padding: 20px 20px;
+}
+.our-customers img {
+    width: 10%;
+    padding: 10px 20px;
+}
+.our-customers p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px 20px;
+    color: rgb(85, 85, 85);
+}
