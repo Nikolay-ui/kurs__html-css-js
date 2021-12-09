@@ -6,6 +6,7 @@
     align-items: center;
     text-align: center;
     padding: 20px 0;
+    margin: 20px 0;
 }
 .our-customers h2 {
     font-size: 38px;
@@ -21,4 +22,12 @@
     font-weight: 400;
     padding: 20px 20px;
     color: rgb(85, 85, 85);
+}
+.header-our-customers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
