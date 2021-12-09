@@ -93,11 +93,19 @@
 }
 .slider .slick-arrow.slick-prev {
     left: 2.5%;
-    color: #fff;
     background: url("../img/our-customers-and-slider/icons-left-64.png") 0 0 / 100% no-repeat;
 }
 .slider .slick-arrow.slick-next {
     right: 2.5%;
-    color: #fff;
     background: url("../img/our-customers-and-slider/icons-right-64.png") 0 0 / 100% no-repeat;
+}
+@media (min-width: 1200px) {
+    .slider .slick-arrow.slick-prev {
+        left: 3%;
+        background: url("../img/our-customers-and-slider/left-icon.png") 0 0 / 100% no-repeat;
+    }
+    .slider .slick-arrow.slick-next {
+        right: 3%;
+        background: url("../img/our-customers-and-slider/right-icon.png") 0 0 / 100% no-repeat;
+    }
 }
