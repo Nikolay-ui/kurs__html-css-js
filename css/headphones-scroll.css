@@ -4,6 +4,12 @@
     background-size: cover;
     color: #fff;
 }
+/* поміняти положення картинки
+    .blue-headphones{
+    object-fit: contain;
+    object-position: 51.575% 50%;
+    */
+
 .button-buy-now-blue-part {
     background-color: #f2cb1f;
     color: black;
@@ -21,6 +27,7 @@
     background-size: cover;
     color: white;
 }
+
 .button-buy-now-yellow-part{
     background-color: #2877b6;
     color: white;
@@ -48,7 +55,6 @@
     color: #2a2a2a;
     padding:20px 40px ;
 }
-
 
 .little-grey-text {
     color: rgba(255, 255, 255, 0.78);
