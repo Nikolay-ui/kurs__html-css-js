@@ -32,7 +32,7 @@ $(document).ready(function () {
       arrows: true,
       dots: false,
       adaptiveHeight: true,
-      slidesToShow: 1,
+      slidesToShow: 5,
       slidesToScroll: 1,
       speed: 700,
       easing: 'linear',
@@ -47,11 +47,18 @@ $(document).ready(function () {
       slidesPerRows: 1,
       responsive: [
         {
-          breakpoint: 720,
+          breakpoint: 1068,
           settings: {
-            slidesToShow: 1
-          },
-          breakpoint: 900,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        },{
+          breakpoint: 480,
           settings: {
             slidesToShow: 1
           }
