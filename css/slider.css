@@ -51,12 +51,18 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 5px 60px;
 }
 .slider__item img {
-    width: 11%;
+    width: 75px;
     height: auto;
     border-radius: 50%;
     object-fit: cover;
+}
+@media (min-width: 768px) {
+    .slider__item img {
+        width: 125px;
+    }   
 }
 .slider__item h3 {
     padding: 10px 20px;
@@ -65,14 +71,12 @@
     color: rgb(40, 119, 182);
 }
 .slider__item p {
-    width: 80%;
-    padding: 10px 20px;
+    width: 100%;
     font-size: 16px;
     line-height: 25px;
     font-weight: 400;
     color: rgb(126, 126, 126);
-    width: 100%;
-    max-width: 500px;
+    max-width: 750px;
 }
 .slider__item span {
     padding: 20px;
