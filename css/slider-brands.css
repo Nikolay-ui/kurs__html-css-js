@@ -69,35 +69,6 @@
     text-align: center;
     object-fit: cover;
 }
-/* .apple img {
-    width: 50%;
-    padding: 18px 50px;
-    margin: 0 20px;
-}
-.sony img {
-    width: 100%;
-    padding: 30px 20px;
-}
-.marshall img {
-    width: 50%;
-    padding: 15px 50px;
-}
-.sennheiser img {
-    width: 50%;
-    padding: 13px 50px;
-}
-.panasonic img {
-    width: 80%;
-    padding: 33px 30px;
-}
-.samsung img {
-    width: 70%;
-    padding: 10px 30px;
-}
-.jbl img {
-    width: 36%;
-    padding: 0 40px;
-} */
 .slider-brands .slick-arrow {
     position: absolute;
     top: 50%;
