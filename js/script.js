@@ -26,7 +26,6 @@ $(document).ready(function () {
       ],
     });
   });
-
   $(document).ready(function () {
     $('.slider-brands').slick({
       arrows: true,
