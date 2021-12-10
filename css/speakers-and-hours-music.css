@@ -70,6 +70,10 @@
         font-weight: 750;
         padding: 80px 20px 20px 20px;
     }
+    .speakers-slider-block img {
+        width: 9%;
+        padding: 10px 20px;
+    }
 }
 @media (min-width: 998px) {
     .speakers-slider-block h2 {
@@ -77,12 +81,20 @@
         font-weight: 750;
         padding: 80px 20px 20px 20px;
     }
+    .speakers-slider-block img {
+        width: 7%;
+        padding: 10px 20px;
+    }
 }
 @media (min-width: 1198px) {
     .speakers-slider-block h2 {
         font-size: 60px;
         font-weight: 800;
         padding: 90px 20px 20px 20px;
+    }
+    .speakers-slider-block img {
+        width: 5%;
+        padding: 10px 20px;
     }
 }
 .slick-list {
