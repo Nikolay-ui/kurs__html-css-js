@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Heebo:wght@900&family=Lato:wght@900&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.h2 {
+    font-weight: 900;
+    font-family: 'Heebo', sans-serif;
+    font-size: 60px;
+}
+
+.h4-name {
+    font-weight: 400;
+    font-family: PT Sans,sans-serif;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 24px;
+    color: #2a2a2a;
+}
+
+.h4-price {
+    font-weight: 700;
+    font-family: PT Sans,sans-serif;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 16px;
+    color: #2877b6;
+}
+
+.a {
+    text-decoration: none;
+}
+
+.headphones-logo {
+    width: 50px;
+}
+
+.headphones-all-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.headphones-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: #f2f2f2;
+    padding: 0px 15px 0px 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.headphones-image {
+    width: 355px;
+}
+
+
+@media (min-width: 765px) {
+    .headphones-all-cards {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 990px) {
+    .headphones-all-cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
