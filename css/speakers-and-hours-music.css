@@ -144,7 +144,7 @@
     margin: 20px 25px;
 }
 .speakers-slider__item img {
-    width: 80%;
+    width: 72.5%;
 }
 .speakers-slider__item span {
     padding: 20px;
@@ -188,4 +188,14 @@
 .speakers-slider .slick-arrow.slick-next {
     right: 2.5%;
     background: url("../img/speakers-slider/icons-right-50.png") 0 0 / 100% no-repeat;
+}
+@media (min-width: 1068px) {
+    .speakers-slider .slick-arrow.slick-prev {
+        left: 0;
+        background: url("../img/speakers-slider/icons-left-50.png") 0 0 / 100% no-repeat;
+    }
+    .speakers-slider .slick-arrow.slick-next {
+        right: 0;
+        background: url("../img/speakers-slider/icons-right-50.png") 0 0 / 100% no-repeat;
+    }
 }
