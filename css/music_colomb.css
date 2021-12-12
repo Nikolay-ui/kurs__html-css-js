@@ -2,7 +2,7 @@
     background-color: rgb(255, 94, 0); 
     color: white; 
     padding: 50px;
-    line-height: 1,5;
+    font-family: Heebo,sans-serif;
 }
 .div_text {
     margin: 20px auto;
