@@ -13,11 +13,17 @@
     padding: 20px 35px;
     font-size: 15px;
 }
+.button_buy_now:hover {
+    background-color: rgb(20, 20, 20);
+}
 .button_more_models {
     background-color: rgb(20, 20, 20); 
     color: white; 
     padding: 20px 35px;
     font-size: 15px;
+}
+.button_more_models:hover {
+    background-color: rgb(64, 67, 224);
 }
 .h2_jbl_speaker {
     font-size: 40px;
