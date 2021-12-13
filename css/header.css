@@ -1,0 +1,19 @@
+.header_top{
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+}
+.header_top-nav-callus_1{
+    color:white;
+}
+.ui-link{
+    color:white;
+    text-decoration: none;
+}
+.ui-link:hover{
+    text-decoration: underline;
+}
