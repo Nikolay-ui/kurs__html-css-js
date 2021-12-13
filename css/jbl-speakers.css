@@ -1,4 +1,5 @@
 .jbl-speakers {
+    min-width: 100%;
     width: 100%;
     height: auto;
     display: flex;
@@ -116,4 +117,33 @@
     height: 4px;
     width: 30px;
     background-color: rgb(242, 203, 31);
+}
+@media (max-width: 768px) {
+    .jbl-speakers {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        max-width: 500px;
+    }
+    .jbl-speakers__left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 100%;
+        background: url(../img/jbl-speakers/60c220c189cbd70021366382_optimized.webp);
+        background-size: cover;
+        padding: 10px;
+        margin-right: 0;
+    }
+    .jbl-speakers__right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex: 0 1 100%;
+        padding: 10px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
 }
