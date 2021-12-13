@@ -1,56 +1,52 @@
-.blue-part {
-    background-image: url("https://res2.weblium.site/res/60b5d551c422d50022b385d0/60c34cd15f75ef0021bf4d75");
+.first-blue-scroll-part {
+    background-image: url(../img/background/bgblue.svg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 }
-/* поміняти положення картинки
-    .blue-headphones{
-    object-fit: contain;
-    object-position: 51.575% 50%;
-    */
 
-.button-buy-now-blue-part {
+.button-buy-now-blue-scroll-part {
     background-color: #f2cb1f;
     color: black;
     padding:20px 40px ;
 }
-.button-all-headphones-blue-part {
+.button-all-headphones-blue-scroll-part {
     background-color: #2877b6;
     color: white;
     padding:20px 40px ;
 }
 
-.yellow-part {
-    background-image: url("https://res2.weblium.site/res/60b5d551c422d50022b385d0/60c34df96a5c470021993cc2");
+.second-yellow-scroll-part {
+    background-image: url(../img/background/bgyellow.svg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
 
-.button-buy-now-yellow-part{
+
+.button-buy-now-yellow-scroll-part{
     background-color: #2877b6;
     color: white;
     padding:20px 40px ;
 }
-.button-all-headphones-yellow-part{
+.button-all-headphones-yellow-scroll-part{
     background-color: #2a2a2a;
     color: white;
     padding:20px 40px ;
 }
 
-.black-part {
-    background-image: url("https://res2.weblium.site/res/60b5d551c422d50022b385d0/60c34e2d8c14b50022843779");
+.third-black-scroll-part {
+    background-image: url(../img/background/blackbg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 }
-.button-buy-now-black-part{
+.button-buy-now-black-scroll-part{
     background-color: #2877b6;
     color: white;
     padding:20px 40px ;
 }
-.button-all-headphones-black-part{
+.button-all-headphones-black-scroll-part{
     background-color:#f2cb1f;
     color: #2a2a2a;
     padding:20px 40px ;
@@ -58,4 +54,16 @@
 
 .little-grey-text {
     color: rgba(255, 255, 255, 0.78);
+}
+.title-first-blue-scroll-part, .title-second-yellow-scroll-part, .title-third-black-scroll-part {
+    font-family: Heebo, sans-serif;
+    font-size: 50px;
+}
+.subtitle-scroll-part {
+    font-family: Heebo, sans-serif;
+    font-size: 22px;
+}
+.price-scroll-part {
+    font-family: Heebo, sans-serif;
+    font-size: 20px;
 }
