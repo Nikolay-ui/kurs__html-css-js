@@ -2,7 +2,7 @@
     background-color: rgb(255, 94, 0); 
     color: white; 
     padding: 50px;
-    line-height: 1,5;
+    font-family: Heebo,sans-serif;
 }
 .div_text {
     margin: 20px auto;
@@ -13,11 +13,17 @@
     padding: 20px 35px;
     font-size: 15px;
 }
+.button_buy_now:hover {
+    background-color: rgb(20, 20, 20);
+}
 .button_more_models {
     background-color: rgb(20, 20, 20); 
     color: white; 
     padding: 20px 35px;
     font-size: 15px;
+}
+.button_more_models:hover {
+    background-color: rgb(64, 67, 224);
 }
 .h2_jbl_speaker {
     font-size: 40px;
@@ -30,6 +36,7 @@
 .normal_text {
     font-size: 18px;
     color: rgb(233, 223, 223);
+    margin-bottom: 2em;
 }
 .price {
     margin: 50px auto;   
@@ -37,6 +44,6 @@
 .price_large {
     font-size: 36px;
 }
-.main_music_colomb_img {
+.img/music-colomb {
     
 }
