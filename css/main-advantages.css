@@ -1,4 +1,5 @@
 .main-advantages {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,14 +8,14 @@
 .main-advantages__item {
     margin: 25px 15px;
     width: 100%;
+    max-width: 300px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     text-align: start;
 }
-..main-advantages__icon {
-    background-color: #f2f2f2;
+.main-advantages__icon {
     padding: 15px;
 }
 .main-advantages__icon img {
@@ -48,14 +49,6 @@
         flex-wrap: wrap;
     }
     .main-advantages__item {
-        margin: 25px 15px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: start;
         flex: 0 1 50%;
-
     }
 }
