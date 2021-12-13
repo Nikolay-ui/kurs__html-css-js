@@ -1,0 +1,140 @@
+.jbl-speakers {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.jbl-speakers__left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 70%;
+    background: url(../img/jbl-speakers/60c220c189cbd70021366382_optimized.webp);
+    background-size: cover;
+    padding: 30px;
+    margin-right: 20px;
+}
+.jbl-speakers__right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 30%;
+    background: url(../img/jbl-speakers/60c20997cc781f0021a490c0_optimized_838.webp);
+    background-size: cover;
+    padding: 30px;
+    margin-left: 20px;
+}
+.jbl-speakers__left h2 {
+    font-size: 82px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    padding: 30px;
+}
+.jbl-speakers__left p {
+    padding: 30px;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: rgb(201, 201, 201);
+}
+.speakers-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px;
+}
+.speakers-prices small {
+    padding: 20px 5px;
+    font-size: 32px;
+    color: rgb(201, 201, 201);
+}
+.speakers-prices strong {
+    padding: 20px 10px;
+    font-size: 32px;
+    color: rgb(242, 203, 31);
+}
+/* @media (max-width: 568px) {
+    .hours-of-music__text h2 {
+        font-size: 54px;
+        font-weight: 750;
+    }
+    .hours-of-music__text p {
+        padding: 25px 10px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .hours-of-music__text i {
+        padding: 23px;
+        font-size: 13px;
+    }
+    .hours-of-music__text span {
+        padding: 0 10px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+@media (max-width: 450px) {
+    .hours-of-music__text h2 {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .hours-of-music__text p {
+        padding: 20px 10px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .hours-of-music__text i {
+        padding: 21px;
+        font-size: 12px;
+    }
+    .hours-of-music__text span {
+        padding: 0 10px;
+        font-size: 13px;
+        font-weight: 250;
+    }
+}
+@media (max-width: 350px) {
+    .hours-of-music__text h2 {
+        font-size: 42px;
+        font-weight: 650;
+    }
+    .hours-of-music__text p {
+        padding: 20px 5px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .hours-of-music__text i {
+        padding: 18px;
+        font-size: 10px;
+    }
+    .hours-of-music__text span {
+        padding: 0 10px;
+        font-size: 12px;
+        font-weight: 250;
+    }
+} */
+.speakers-links {
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.speakers-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.speakers-links__line {
+    margin: 0 10px;
+    height: 4px;
+    width: 50px;
+    background-color: rgb(75, 138, 255);
+}
+/* color: rgb(75, 138, 255); */

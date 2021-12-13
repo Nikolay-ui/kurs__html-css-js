@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
 }
 .featured-sale-new__tabs {
     width: 100%;
@@ -48,7 +49,7 @@
     flex-wrap: wrap;
 }
 .fsn-featured__item {
-    max-width: 300px;
+    max-width: 250px;
     width: 100%;
     display: flex;
     flex-direction: column;
