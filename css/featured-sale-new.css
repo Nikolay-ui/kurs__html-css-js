@@ -25,15 +25,8 @@
     margin-bottom: -23px;
     border-bottom: 3px solid coral;
 }
-.featured-sale-new>#fsn-featured:target~.featured-sale-new__tabs>a[href="#fsn-featured"],
-.featured-sale-new>#fsn-sale:target~.featured-sale-new__tabs>a[href="#fsn-sale"],
-.featured-sale-new>#fsn-new:target~.featured-sale-new__tabs>a[href="#fsn-new"] {
-  background-color: #bbdefb;
-  cursor: default;
-}
 .fsn-block {
     display: none;
-    order: 1;
 }
 .fsn-block::before {
     content: "";
