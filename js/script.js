@@ -1,3 +1,4 @@
+// slider's script
 $(document).ready(function () {
   $('.slider').slick({
     arrows: true,
@@ -104,20 +105,9 @@ $(document).ready(function () {
     ],
   });
 });
-
-// const iconMenu = document.querySelector('.menu__icon');
-// const menuBody = document.querySelector('.menu__body');
-// if (iconMenu) {
-//   iconMenu.addEventListener("click", function (e) {
-//     document.body.classList.toggle('_lock');
-//     iconMenu.classList.toggle('_active');
-//     menuBody.classList.toggle('_active');
-//   });
-// }
-
+// tab's script
 const tabLink = document.querySelectorAll('.tab__link');
 const tabItems = document.querySelectorAll('.fsn-tabs__item');
-
 tabLink.forEach(function (item) {
   item.addEventListener("click", function () {
     let currentLink = item;
@@ -136,5 +126,4 @@ tabLink.forEach(function (item) {
     }
   });
 });
-
 document.querySelector('.tab__link').click();
