@@ -90,3 +90,6 @@
     display: grid;
     grid-template-columns: 50% 50%;
 }
+.headphones-of-scroll-part {
+    margin: 100px;
+}
