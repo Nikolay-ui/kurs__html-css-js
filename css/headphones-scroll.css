@@ -1,7 +1,7 @@
 .first-blue-scroll-part {
     background-image: url(../img/background/bgblue.svg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: #fff;
     
 }
