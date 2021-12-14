@@ -14,6 +14,7 @@
     background-color: #2877b6;
     color: white;
     padding:20px 40px ;
+    margin: 20px;
 }
 
 .second-yellow-scroll-part {
@@ -23,16 +24,16 @@
     color: white;
 }
 
-
 .button-buy-now-yellow-scroll-part{
     background-color: #2877b6;
     color: white;
-    padding:20px 40px ;
+    padding: 20px 40px ;
 }
 .button-all-headphones-yellow-scroll-part{
     background-color: #2a2a2a;
     color: white;
     padding:20px 40px ;
+    margin: 20px;
 }
 
 .third-black-scroll-part {
@@ -50,6 +51,7 @@
     background-color:#f2cb1f;
     color: #2a2a2a;
     padding:20px 40px ;
+    margin: 20px;
 }
 
 .little-grey-text {
@@ -57,7 +59,7 @@
 }
 .title-first-blue-scroll-part, .title-second-yellow-scroll-part, .title-third-black-scroll-part {
     font-family: Heebo, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 .subtitle-scroll-part {
     font-family: Heebo, sans-serif;
@@ -65,5 +67,27 @@
 }
 .price-scroll-part {
     font-family: Heebo, sans-serif;
-    font-size: 20px;
+    font-size: 22px;
+}
+.price-of-scroll-part {
+    color: rgb(242,203,31);
+    font-size: 30px;
+    font-family: Heebo, sans-serif;
+}
+
+.price-scroll-yellow-part {
+    font-size: 30px;
+    font-family: Heebo, sans-serif;
+    color: white;
+}
+
+.style-button-scrol-part:hover {
+    color: white;
+    background-color: black;
+}
+.style-button-scrol-part-blue:hover {
+    background-color: #2877b6;
+}
+.buttons-of-scroll-part {
+    padding: 40px;
 }
