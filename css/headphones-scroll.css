@@ -1,10 +1,10 @@
 .first-blue-scroll-part {
     background-image: url(../img/background/bgblue.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     color: #fff;
+    
 }
-
 .button-buy-now-blue-scroll-part {
     background-color: #f2cb1f;
     color: black;
@@ -16,14 +16,12 @@
     padding:20px 40px ;
     margin: 20px;
 }
-
 .second-yellow-scroll-part {
     background-image: url(../img/background/bgyellow.svg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
-
 .button-buy-now-yellow-scroll-part{
     background-color: #2877b6;
     color: white;
@@ -35,7 +33,6 @@
     padding:20px 40px ;
     margin: 20px;
 }
-
 .third-black-scroll-part {
     background-image: url(../img/background/blackbg.svg);
     background-repeat: no-repeat;
@@ -53,7 +50,6 @@
     padding:20px 40px ;
     margin: 20px;
 }
-
 .little-grey-text {
     color: rgba(255, 255, 255, 0.78);
 }
@@ -80,7 +76,6 @@
     font-family: Heebo, sans-serif;
     color: white;
 }
-
 .style-button-scrol-part:hover {
     color: white;
     background-color: black;
@@ -90,4 +85,8 @@
 }
 .buttons-of-scroll-part {
     padding: 40px;
+}
+.first-blue-scroll-part, .second-yellow-scroll-part {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
