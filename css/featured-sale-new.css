@@ -22,15 +22,19 @@
     background-color: #fff;
     font-size: 16px;
     font-weight: 400;
-    border-bottom: 2px solid rgb(235, 235, 235);
 }
 .fsn__tabs-nav a.active {
-    padding: 10px 21px;
+    padding: 12px 21px;
+    margin-bottom: -2px;
     color: rgb(0, 0, 0);
     background-color: rgb(240, 240, 240);
     font-size: 16px;
-    font-weight: 450;
+    font-weight: 500;
     border-bottom: 2px solid coral;
+}
+.fsn__tabs-nav a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
 }
 .fsn-tabs__item {
     display: none;
