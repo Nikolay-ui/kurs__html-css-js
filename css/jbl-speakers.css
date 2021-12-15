@@ -13,8 +13,7 @@
     display: flex;
     flex-direction: column;
     flex: 0 1 70%;
-    background: url(../img/jbl-speakers/60c220c189cbd70021366382_optimized.webp);
-    background-size: cover;
+    background: url(../img/jbl-speakers/60c220c189cbd70021366382_optimized.webp) 50% 70% / cover no-repeat;
     padding: 10px;
     margin-right: 20px;
 }
@@ -77,8 +76,7 @@
     display: flex;
     flex-direction: column;
     flex: 0 1 30%;
-    background: url(../img/jbl-speakers/60c20997cc781f0021a490c0_optimized_838.webp);
-    background-size: cover;
+    background: url(../img/jbl-speakers/60c20997cc781f0021a490c0_optimized_838.webp) 100% 70% / cover no-repeat;
     padding: 10px;
     margin: 10px;
 }
@@ -134,8 +132,6 @@
         display: flex;
         flex-direction: column;
         flex: 0 1 100%;
-        background: url(../img/jbl-speakers/60c220c189cbd70021366382_optimized.webp);
-        background-size: cover;
         padding: 10px;
         margin-right: 0;
     }
