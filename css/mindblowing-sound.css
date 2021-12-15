@@ -25,7 +25,7 @@
     align-items: flex-start;
 }
 .mindblowing-sound__content img {
-    width: 70px;
+    width: 65px;
     padding: 20px;
 }
 .mindblowing-sound__content h3 {
@@ -98,13 +98,13 @@
         align-items: center;
     }
     .mindblowing-sound__empty-block {
-        flex: 0 1 50%;
-        padding: 470px 100px;
+        flex: 0 1 44%;
+        padding: 482px 100px;
         background: url(../img/mindblowing-sound/60c225afcc781f0021a4d1b7_optimized_1159_c1115x1165-16x0.webp) 10% 10% /
         cover no-repeat;
     }
     .mindblowing-sound__body {
-        flex: 0 1 62%;
+        flex: 0 1 60%;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -118,5 +118,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+    }
+    .mindblowing-sound__content h3 {
+        font-size: 52px;
+        font-weight: 900;
+        padding: 10px 10px;
     }
 }
