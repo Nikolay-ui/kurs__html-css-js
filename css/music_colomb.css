@@ -9,33 +9,34 @@
     background-size: auto 100%;
 }
 .div_text {
-    margin: 20px auto;
+    margin: 5px auto;
+    margin-left: 150px
 }
 .buttons {
     display: flex;
     flex-wrap: wrap;
 }
 .button_buy_now {
-    background-color: rgb(64, 67, 224); 
+    background-color: rgb(67 108 195); 
     color: white; 
-    padding: 20px 35px;
+    padding: 25px 30px;
     font-size: 15px;
     margin-left: 40px;
     margin-top: 20px;
 }
 .button_buy_now:hover {
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(54 42 42);
 }
 .button_more_models {
-    background-color: rgb(20, 20, 20); 
+    background-color: rgb(54 42 42); 
     color: white; 
-    padding: 20px 35px;
+    padding: 25px 30px;
     font-size: 15px;
     margin-left: 40px;
     margin-top: 20px;
 }
 .button_more_models:hover {
-    background-color: rgb(64, 67, 224);
+    background-color: rgb(67 108 195); 
 }
 .h2_jbl_speaker {
     font-size: 40px;
