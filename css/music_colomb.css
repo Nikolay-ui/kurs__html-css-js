@@ -10,6 +10,10 @@
 .div_text {
     margin: 20px auto;
 }
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
 .button_buy_now {
     background-color: rgb(64, 67, 224); 
     color: white; 
