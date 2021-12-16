@@ -6,6 +6,7 @@
     font-family: Heebo,sans-serif;
     display: grid;
     grid-template-columns: 4fr 6fr;
+    background-size: auto 100%;
 }
 .div_text {
     margin: 20px auto;
