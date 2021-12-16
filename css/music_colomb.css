@@ -4,6 +4,8 @@
     color: white; 
     padding: 50px;
     font-family: Heebo,sans-serif;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
 }
 .div_text {
     margin: 20px auto;
