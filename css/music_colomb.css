@@ -19,6 +19,8 @@
     color: white; 
     padding: 20px 35px;
     font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 .button_buy_now:hover {
     background-color: rgb(20, 20, 20);
@@ -28,6 +30,8 @@
     color: white; 
     padding: 20px 35px;
     font-size: 15px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
 .button_more_models:hover {
     background-color: rgb(64, 67, 224);
