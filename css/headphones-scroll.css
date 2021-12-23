@@ -3,6 +3,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    max-width: 100%;
     
 }
 .button-buy-now-blue-scroll-part {
@@ -85,11 +86,25 @@
 }
 .buttons-of-scroll-part {
     padding: 40px;
-}
-.first-blue-scroll-part, .second-yellow-scroll-part {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: inline;
+    /*розібратись з їх положенням*/
 }
 .headphones-of-scroll-part {
     margin: 100px;
+}
+
+@media (min-width: 750px) {
+    .first-blue-scroll-part, .second-yellow-scroll-part, .third-black-scroll-part {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+}
+.text-of-scrollpart {
+    margin: 100px;
+}
+@media (max-width: 750px) {
+    .text-of-scrollpart {
+        margin: 0;
+        padding: 30px;
+    }
 }
