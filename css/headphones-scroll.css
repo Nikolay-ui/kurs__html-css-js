@@ -86,11 +86,8 @@
 }
 .buttons-of-scroll-part {
     padding: 40px;
-    display: inline-block;
-    vertical-align: middle;
+    display: inline;
     /*розібратись з їх положенням*/
-}
-    
 }
 .headphones-of-scroll-part {
     margin: 100px;
