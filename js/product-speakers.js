@@ -1,4 +1,4 @@
-// speakers-slider
+(function() {
 const products = [
     {
         image: "img/speakers-slider/jbl-br-55.jpg",
@@ -45,3 +45,4 @@ function renderProducts(products) {
     }
 }
 renderProducts(products);
+})();
