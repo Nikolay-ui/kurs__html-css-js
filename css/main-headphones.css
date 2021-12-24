@@ -51,11 +51,17 @@
 
 .headphones-all-cards {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    justify-items: center;
+    max-width: 1225px;
+    object-fit: cover;
 }
 
 .headphones-card {
     padding: 0px 15px 0px 15px;
+    object-fit: cover;
+    max-width: 200px;
 }
 
 .content {
@@ -89,12 +95,19 @@
 }
 
 .button-add-cart:hover {
-    transition: 1s;
+    transition: 0.5s;
     background-color: black;
-    
 }
 
-@media (min-width: 765px) {
+@media (min-width: 1px) {
+    .headphones-all-cards {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1220px) {
     .headphones-all-cards {
         display: grid;
         gap: 5px;
@@ -102,7 +115,7 @@
     }
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1400px) {
     .headphones-all-cards {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
