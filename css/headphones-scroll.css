@@ -9,13 +9,15 @@
 .button-buy-now-blue-scroll-part {
     background-color: #f2cb1f;
     color: black;
-    padding:20px 40px ;
+    padding:25px 40px ;
+    margin: 20px 20px 20px -40px;
 }
 .button-all-headphones-blue-scroll-part {
     background-color: #2877b6;
     color: white;
-    padding:20px 40px ;
-    margin: 20px;
+    padding:25px 40px ;
+    margin: 20px 20px 20px 0px;
+    
 }
 .second-yellow-scroll-part {
     background-image: url(../img/background/bgyellow.svg);
@@ -26,13 +28,14 @@
 .button-buy-now-yellow-scroll-part{
     background-color: #2877b6;
     color: white;
-    padding: 20px 40px ;
+    padding: 25px 40px;
+    margin: 20px 20px 20px -40px;
 }
 .button-all-headphones-yellow-scroll-part{
     background-color: #2a2a2a;
     color: white;
-    padding:20px 40px ;
-    margin: 20px;
+    padding:25px 40px ;
+    margin: 20px 20px 20px 0px;
 }
 .third-black-scroll-part {
     background-image: url(../img/background/blackbg.svg);
@@ -43,20 +46,22 @@
 .button-buy-now-black-scroll-part{
     background-color: #2877b6;
     color: white;
-    padding:20px 40px ;
+    padding: 25px 40px;
+    margin: 20px 20px 20px -40px;
 }
 .button-all-headphones-black-scroll-part{
     background-color:#f2cb1f;
     color: #2a2a2a;
-    padding:20px 40px ;
-    margin: 20px;
+    padding:25px 40px ;
+    margin: 20px 20px 20px 0px;
 }
 .little-grey-text {
     color: rgba(255, 255, 255, 0.78);
+    font-size: 15px;
 }
 .title-first-blue-scroll-part, .title-second-yellow-scroll-part, .title-third-black-scroll-part {
     font-family: Heebo, sans-serif;
-    font-size: 40px;
+    font-size: 42px;
 }
 .subtitle-scroll-part {
     font-family: Heebo, sans-serif;
@@ -86,14 +91,14 @@
 }
 .buttons-of-scroll-part {
     padding: 40px;
-    display: inline;
-    /*розібратись з їх положенням*/
+    display: flex;
+    flex-direction: row;
 }
 .headphones-of-scroll-part {
-    margin: 100px;
+    margin: 120px;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 770px) {
     .first-blue-scroll-part, .second-yellow-scroll-part, .third-black-scroll-part {
         display: grid;
         grid-template-columns: 40% 60%;
@@ -101,10 +106,14 @@
 }
 .text-of-scrollpart {
     margin: 100px;
+    padding: 20px;
 }
-@media (max-width: 750px) {
+@media (max-width: 770px) {
     .text-of-scrollpart {
         margin: 0;
-        padding: 30px;
+        padding: 30px ;
     }
+}
+.content-of-subtitle{
+    padding-top: 35px; 
 }
