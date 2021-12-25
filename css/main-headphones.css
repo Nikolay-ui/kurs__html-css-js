@@ -41,6 +41,10 @@
     text-decoration: none;
 }
 
+.main__headphones {
+    padding-bottom: 30px;
+}
+
 .headphones-logo {
     display: block;
     margin-left: auto;
@@ -105,6 +109,9 @@
         gap: 5px;
         grid-template-columns: 1fr;
     }
+    .headphones-card {
+        max-width: 300px;
+    }
 }
 
 @media (min-width: 1220px) {
@@ -112,6 +119,9 @@
         display: grid;
         gap: 5px;
         grid-template-columns: 1fr 1fr;
+    }
+    .headphones-card {
+        max-width: 500px;
     }
 }
 
