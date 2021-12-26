@@ -82,6 +82,7 @@
 .headphones-image {
     object-fit: cover;
     width: 340px;
+    max-width: 340px;
 }
 
 .button-add-cart {
