@@ -1,36 +1,6 @@
-(function () {
-    const products = [
-        {
-            id: 1,
-            image: "img/headphones/jbl-334wn.png",
-            name: "JBL 334WN",
-            price: "$140,00"
-        },
-        {
-            id: 2,
-            image: "img/headphones/airpulse-bb34.png",
-            name: "AirPulse BB34",
-            price: "$112,00"
-        },
-        {
-            id: 3,
-            image: "img/headphones/bang-and-olufsen-f112.png",
-            name: "Bang & Olufsen F112",
-            price: "$145,00"
-        },
-        {
-            id: 4,
-            image: "img/headphones/airpulse-rs45.png",
-            name: "AirPulse RS45",
-            price: "$195,00"
-        },
-        {
-            id: 5,
-            image: "img/headphones/sony-tt56.png",
-            name: "Sony TT56",
-            price: "$98,00"
-        }
-    ];
+(async function () {
+    const response = await fetch('main-headphones.json');
+    const products = await response.json();
 
     function renderProducts(product) {
         const productsContainer = document.querySelector('.headphones-all-cards');
