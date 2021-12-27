@@ -17,4 +17,4 @@ async function handleSubmit(event) {
         status.innerHTML = "Oops! There was a problem submitting your form"
     });
 }
-form.addEventListener("submit", handleSubmit)
+form.addEventListener("submit", handleSubmit);
