@@ -1,48 +1,57 @@
-(function() {
-const products = [
-    {
-        image: "img/speakers-slider/jbl-br-55.jpg",
-        model: "JBL BR-55",
-        price: "$110,00"
-    },
-    {
-        image: "img/speakers-slider/jbl-gt-345.jpg",
-        model: "JBL GT-345",
-        price: "$120,00"
-    },
-    {
-        image: "img/speakers-slider/jbl-party-pt-25.jpg",
-        model: "JBL Party PT-25",
-        price: "$180,00"
-    },
-    {
-        image: "img/speakers-slider/sony-yt555.jpg",
-        model: "SONY YT555",
-        price: "$140,00"
-    },
-    {
-        image: "img/speakers-slider/jbl-or-57.jpg",
-        model: "JBL OR-57",
-        price: "$98,00"
-    },
-    {
-        image: "img/speakers-slider/jbl-rr-56.jpg",
-        model: "JBL RR-56",
-        price: "$110,00"
-    }
-];
+(async function () {
+    const response = await fetch('product-speakers.json');
+    const products = await response.json();
 
-function renderProducts(products) {
-    const productsContainer = document.querySelector('.speakers-slider');
-    for (const product of products) {
-        productsContainer.innerHTML +=
-            `<div class="speakers-slider__item">
-        <img src="${product.image}">
-        <span>${product.model}</span>
-        <strong>${product.price}</strong>
-        <button type="submit">ADD TO CART</button>
-        </div>`;
+    function renderProducts(products) {
+        const productsContainer = document.querySelector('.speakers-slider');
+        for (const product of products) {
+            productsContainer.innerHTML +=
+                `<div class="speakers-slider__item">
+            <img src="${product.image}">
+            <span>${product.model}</span>
+            <strong>${product.price}</strong>
+            <button type="submit">ADD TO CART</button>
+            </div>`;
+        }
     }
-}
-renderProducts(products);
+    renderProducts(products);
+    $(document).ready(function () {
+        $('.speakers-slider').slick({
+            arrows: true,
+            dots: false,
+            adaptiveHeight: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            speed: 700,
+            easing: 'linear',
+            infinite: true,
+            initialSlide: 1,
+            autoplay: false,
+            autoplaySpeed: 1500,
+            pauseOnFocus: true,
+            pauseOnHover: true,
+            pauseOnDotsHover: true,
+            rows: 1,
+            slidesPerRows: 1,
+            responsive: [
+                {
+                    breakpoint: 1068,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ],
+        });
+    });
 })();

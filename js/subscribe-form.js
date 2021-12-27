@@ -1,3 +1,4 @@
+(function () {
 const form = document.getElementById("my-form");
 
 async function handleSubmit(event) {
@@ -18,3 +19,4 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+})();

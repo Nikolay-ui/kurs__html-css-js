@@ -15,6 +15,15 @@
     background: #2670ac;
     padding: 20px 10px;
 }
+.hot-offers__body {
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .hot-offers__title {
     min-width: 200px;
     width: 100%;
@@ -60,14 +69,19 @@
 }
 @media (max-width: 562px) {
     .hot-offers {
-        max-width: 100%;
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background: #2877b6;
         padding: 20px 5px;
+    }
+    .hot-offers__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .hot-offers__title {
         max-width: 350px;
@@ -97,8 +111,17 @@
         margin: 10px 0;
     }
 }
+.footer__black-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+
+}
 .contacts-form__body {
-    max-width: 100%;
+    max-width: 1250px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -342,6 +365,7 @@
     }
 }
 .footer__underline {
+    max-width: 1250px;
     width: 100%;
     background-color: rgb(36, 36, 36);
     display: flex;
