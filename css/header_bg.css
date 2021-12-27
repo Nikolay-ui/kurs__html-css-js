@@ -7,7 +7,7 @@
     justify-content: flex-start;
   }
   
-  .bg_text h1 {
+  .bg_text h5 {
     font-family: var(--additional-font);
     font-size: 3.52rem;
     font-weight: 900;
@@ -48,11 +48,12 @@
     transition: 1.4s;
   }
 @media(min-width: 991px) {
-    .bg_text h1{
-    font-size: 5.3rem;
+    .bg_text h5{
+
+    font-size: 90px;
     line-height: 5.82rem;
     margin-top: 0;
     min-width: 301px;
-    max-width: 449px;
+    max-width: 550px;
     }
 }
