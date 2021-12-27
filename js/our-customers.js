@@ -12,7 +12,8 @@
                 <h3>${product.name}</h3>
                 <p>${product.text}</p>
                 <span>${product.data}</span>
-            </div>`;
+                </div>`
+                ;
         }
     }
     renderProducts(products);
