@@ -1,3 +1,4 @@
+(function () {
 const tabLink = document.querySelectorAll('.tab__link');
 const tabItems = document.querySelectorAll('.fsn-tabs__item');
 tabLink.forEach(function (item) {
@@ -19,3 +20,4 @@ tabLink.forEach(function (item) {
   });
 });
 document.querySelector('.tab__link').click();
+})();
