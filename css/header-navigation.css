@@ -3,9 +3,9 @@
     padding-top: 40px;
 }
 .header-banner{
-        min-height: 75vh;
-        background-size: cover;
-        background-position: 43.44% 84.95%;
+    min-height: 75vh;
+    background-size: cover;
+    background-position: 43.44% 84.95%;
 }
 .header-banner1{
     background: url(../img/header/header-banner.webp) no-repeat;
@@ -22,53 +22,71 @@
 .header_navigation-wrap-icons{
     display: none;
 }
+
 @media (min-width: 991px){
-        body.lock {
-        overflow: hidden;
-  }
+    body.lock {
+    overflow: hidden;
+}
 
 .container_1{
-  max-width: 1120px;
-  margin: auto;
-  padding: 0 24px;
+    max-width: 1120px;
+    margin: auto;
+    padding: 0 24px;
 }
 .header_navigation{
-        display: flex;
-        justify-content: space-between;
-        padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
 }
 section nav .header_navigation-wrap{
-  display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     width: 75%;
 }
 section nav .header_navigation-wrap-pages {
-        display: block;
-        font-size: 0.92rem;
-        font-weight: 700;
-        color: #2a2a2a;
-        min-width: 480px;
-        display: flex;
-        justify-content:  space-around;
-        height: auto;
+    display: block;
+    font-size: 0.92rem;
+    font-weight: 700;
+    min-width: 480px;
+    display: flex;
+    justify-content:  space-around;
+    height: auto;
         
 }
 section nav .header_navigation-wrap-pages a {
-        position: relative;
-        font-size: 0.91rem;
-        color: #2a2a2a ;
-        font-weight: 700;
-        text-decoration: none;
-        line-height: 2.5rem;
+    position: relative;
+    font-size: 0.91rem;
+    color: #2a2a2a ;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+section nav .header_navigation-wrap-pages a:hover {
+    color: #2a2a2a ;
+    cursor: pointer;
+}
+section nav .header_navigation-wrap-pages a:after{
+    display: block;
+    position: absolute;
+    left: 0; 
+    width: 0;
+    height: 3px; 
+    border-radius: 0.1rem;
+    background-color: #2a2a2a; 
+    content: "";
+    transition: width 0.2s ease-in;
+}
+section nav .header_navigation-wrap-pages a:hover:after{
+    width: 100%;
 }
 section nav .header_navigation-wrap-icons{
-        min-width: 172px;
-        display: flex;
-        justify-content: space-around;
+    min-width: 172px;
+    display: flex;
+    justify-content: space-around;
 }
 section nav .header_navigation-wrap-icons img{
-        max-width: 28px;
+    max-width: 28px;
+    border-radius: 0.4rem;
 }
-
 }

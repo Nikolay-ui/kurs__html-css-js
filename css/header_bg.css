@@ -1,12 +1,7 @@
 .header_bg {
-    padding: 100px 0 130px 0;
+    padding: 180px 0 250px 0;
   }
-  .bg_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
+
   .bg_text h5 {
     font-family: var(--additional-font);
     font-size: 3.52rem;
@@ -48,12 +43,19 @@
     transition: 1.4s;
   }
 @media(min-width: 991px) {
+    .bg_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    }
     .bg_text h5{
-
     font-size: 90px;
     line-height: 5.82rem;
     margin-top: 0;
     min-width: 301px;
     max-width: 550px;
+    display: flex;
+    flex-wrap: wrap;
     }
 }
