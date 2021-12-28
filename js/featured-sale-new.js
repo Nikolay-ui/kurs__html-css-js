@@ -20,4 +20,6 @@ tabLink.forEach(function (item) {
   });
 });
 document.querySelector('.tab__link').click();
+
+
 })();
