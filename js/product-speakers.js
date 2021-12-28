@@ -9,7 +9,7 @@
                 `<div class="speakers-slider__item">
             <img src="${product.image}">
             <span>${product.model}</span>
-            <strong>${product.price}</strong>
+            <strong>$${product.price}</strong>
             <button type="submit">ADD TO CART</button>
             </div>`;
         }
