@@ -10,7 +10,7 @@
             <img src="${product.image}">
             <span>${product.model}</span>
             <strong>$${product.price}</strong>
-            <button type="submit">ADD TO CART</button>
+            <button data-id="${product.id}" type="submit">ADD TO CART</button>
             </div>`;
         }
     }
