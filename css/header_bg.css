@@ -7,7 +7,7 @@
     font-size: 3.52rem;
     font-weight: 900;
     line-height: 66px;
-    color: var(--banner-h-color);
+    color: #2a2a2a;
     max-width: 332px;
     height: auto;
   }
@@ -34,14 +34,15 @@
     padding: 20px;
   }
   .bg_links_about {
-    background-color: var(--button-blue-color);
-    color: var(--light-text-color);
+    background-color:rgb(67 108 195);
+    color: white;
     transition: 1s;
   }
   .bg_links_about:hover {
-    background-color: var(--button-black-color);
+    background-color: black;
     transition: 1.4s;
   }
+  
 @media(min-width: 991px) {
     .bg_text {
     display: flex;
@@ -57,5 +58,29 @@
     max-width: 550px;
     display: flex;
     flex-wrap: wrap;
-    }
+    }}
+@media (min-width: 1025px){
+    .bg_text h5 {
+    font-size: 5.3rem;
+    line-height: 5.82rem;
+    margin-top: 0;
+    /* min-width: 449px; */
+    max-width: 507px;
 }
+}
+@media (min-width: 846px){
+  .bg_text h5 {
+    max-width: 422px;
+}}
+@media (min-width: 768px){
+  .bg_text h5 {
+    font-size: 4.41rem;
+    line-height: 4.85rem;
+    margin-top: 0;
+    max-width: 300px;
+}}
+@media (min-width: 480px){
+  .bg_text h5 {
+    max-width: 500px;
+}}
+

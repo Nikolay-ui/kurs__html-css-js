@@ -1,4 +1,3 @@
-
 .header_navigation{
     padding-top: 40px;
 }
@@ -23,10 +22,58 @@
     display: none;
 }
 
-@media (min-width: 991px){
+@media (min-width: 990px){
     body.lock {
     overflow: hidden;
 }
+section div nav .header_navigation-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    padding: 12px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  section div nav .header_navigation-burger span,
+  section div nav .header_navigation-burger::before,
+  section div nav .header_navigation-burger::after {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--banner-h-color);
+    transition: all 0.5s ease-in-out;
+  }
+  section div nav .header_navigation-burger span {
+    transform: scale(1);
+  }
+  section div nav .header_navigation-burger::before,
+  section div nav .header_navigation-burger::after {
+    content: " ";
+  }
+  section div nav .header_navigation-burger::before {
+    top: 0;
+  }
+  section div nav .header_navigation-burger::after {
+    bottom: 0;
+  }
+  section div nav .header_navigation-burger.active span {
+    transform: scale(0);
+  }
+  section div nav .header_navigation-burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  section div nav .header_navigation-burger.active::after {
+    bottom: 40%;
+    transform: rotate(45deg);
+  }
+}
+@media (min-width: 991px){
+    section div nav .header_navigation-burger {
+        display: none;
+      }
 
 .container_1{
     max-width: 1120px;
