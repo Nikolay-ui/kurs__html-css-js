@@ -42,7 +42,9 @@
 .fsn-tabs__item.active {
     display: block;
 }
-.featured-sale-new__items {
+.featured__items,
+.sale__items,
+.new__items {
     width: 100%;
     display: flex;
     flex-direction: row;
