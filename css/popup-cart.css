@@ -191,10 +191,15 @@
 .list__item-quantity {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+    align-items: center;
 }
 .list__quantity {
+    flex: 0 1 50%;
     font-size: 12px;
+}
+.list__buttom {
+    flex: 0 1 25%;
 }
 @media (min-width: 768px) {
     .product__list {
