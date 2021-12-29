@@ -33,9 +33,11 @@ class Cart {
         <div class="product__list" data-id="${id}">
         <div class="list__item">${product.model}</div>
         <div class="list__item">$${product.price}</div>
-        <div class="list__item">${this.cart[id]}</div>
+        <div class="list__item-quantity">
+        <div class="list__quantity">${this.cart[id]}</div>
         <div class="list__buttom"><button data-id=${id} class="plus">+</button></div>
         <div class="list__buttom"><button data-id=${id} class="minus">-</button></div>
+        </div>
         </div>
         `;
     }

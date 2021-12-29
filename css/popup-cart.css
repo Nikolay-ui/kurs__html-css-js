@@ -188,6 +188,14 @@
 .list__item {
     font-size: 12px;
 }
+.list__item-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.list__quantity {
+    font-size: 12px;
+}
 @media (min-width: 768px) {
     .product__list {
         width: 90%;
