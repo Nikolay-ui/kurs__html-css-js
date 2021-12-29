@@ -8,7 +8,7 @@
     text-decoration: none;
     z-index: 999990;
 }
-.cart__link.d-none {
+.cart__link.d-none a {
     display: none;
 }
 .d-none {

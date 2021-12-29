@@ -141,7 +141,6 @@ class Cart {
           this.updateBadge();
           this.renderCart();
           window.showAlert('Thank you! ' + responseText);
-          this.cartContainer.querySelector('.cart-form__button-close').click();
         })
         .catch(error => showAlert('There is an error: ' + error, false));
     } else {
