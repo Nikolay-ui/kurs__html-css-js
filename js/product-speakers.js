@@ -63,6 +63,7 @@ class ProductList {
             });
         });
     }
+
     async addEventListeners() {
         document
             .querySelectorAll(
@@ -79,4 +80,7 @@ class ProductList {
         const id = button.dataset.id;
         this.cart.addProduct(id);
     }
+    function() {
+
+    };
 };
