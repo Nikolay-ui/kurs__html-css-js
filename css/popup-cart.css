@@ -197,8 +197,10 @@
 .list__quantity {
     flex: 0 1 50%;
     font-size: 12px;
+    padding-right: 3px;
 }
 .list__buttom {
+    padding: 0 3px;
     flex: 0 1 25%;
 }
 @media (min-width: 768px) {
