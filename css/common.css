@@ -13,10 +13,10 @@ img {
 html,
 body {
     max-width: 100%;
-    overflow-x: hidden;
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
 }
+
 body._lock {
     overflow: hidden;
 }
