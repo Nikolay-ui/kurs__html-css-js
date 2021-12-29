@@ -197,10 +197,10 @@
 .list__quantity {
     flex: 0 1 50%;
     font-size: 12px;
-    padding-right: 3px;
+    padding-right: 5px;
 }
 .list__buttom {
-    padding: 0 3px;
+    padding: 0 5px;
     flex: 0 1 25%;
 }
 @media (min-width: 768px) {
@@ -239,14 +239,7 @@
     letter-spacing: 2px;
     padding: 5px;
 }
-.popup-form__footer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.popup-form__footer button {
+.cart-form__body button {
     width: 125px;
     padding: 10px;
     font-size: 16px;

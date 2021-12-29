@@ -91,13 +91,11 @@
                 </div>
                 <div class="popup__product"></div>
                 <div class="popup-form">
-                    <form id="cart-form" class="cart-form__body">
+                    <form action="https://formspree.io/f/mrgjbbdb" method="POST" id="cart-form" class="cart-form__body">
                         <input id="client-name" type="name" name="name" placeholder="Name" required>
                         <input id="client-email" type="email" name="email" placeholder="Email" required>
+                        <button id="cart-form-button-order" class="cart-form__button">ORDER</button>
                     </form>
-                </div>
-                <div class="popup-form__footer">
-                    <button id="cart-form-button-order" class="cart-form__button order" value="ORDER">ORDER</button>
                 </div>
             </div>
         </div>
@@ -615,11 +613,11 @@
                             </div>
                         </div>
                         <div class="contacts-form__form">
-                            <form action="https://formspree.io/f/mrgjbbdb" method="POST" id="my-form"
+                            <form action="https://formspree.io/f/mrgjbbdb" method="POST" id="subcribe-form"
                                 class="form__body">
                                 <input id="email" type="email" name="email" placeholder="Email" required>
                                 <button id="my-form-button" class="form__button" value="SUBSCRIBE">SUBSCRIBE</button>
-                                <p id="my-form-status"></p>
+                                <p id="subcribe-form-status"></p>
                             </form>
                         </div>
                     </div>

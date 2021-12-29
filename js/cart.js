@@ -11,8 +11,6 @@ class Cart {
       .querySelector('.cart__link')
       .addEventListener('click', () => this.renderCart());
     this.cartContainer
-      .querySelector('.order')
-      .addEventListener('click', ev => this.order(ev));
   }
   saveCart() {
     localStorage['cart'] = JSON.stringify(this.cart);

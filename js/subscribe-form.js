@@ -1,9 +1,9 @@
 (function () {
-const form = document.getElementById("my-form");
+const form = document.getElementById("subcribe-form");
 
 async function handleSubmit(event) {
     event.preventDefault();
-    let status = document.getElementById("my-form-status");
+    let status = document.getElementById("subcribe-form-status");
     let data = new FormData(event.target);
     fetch(event.target.action, {
         method: form.method,
