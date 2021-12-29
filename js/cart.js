@@ -11,8 +11,6 @@ class Cart {
       .querySelector('.cart__link')
       .addEventListener('click', () => this.renderCart());
     this.cartContainer
-      .querySelector('.order')
-      .addEventListener('click', ev => this.order(ev));
   }
   saveCart() {
     localStorage['cart'] = JSON.stringify(this.cart);
@@ -108,41 +106,30 @@ class Cart {
       count, cost
     };
   }
-  async order(ev) {
-    if ((await this.cartLengthAndCost()).count === 0) {
-      window.showAlert('Please choose products to order', false);
-      return;
-    }
+  async function() {
     const form = this.cartContainer.getElementById("cart-form");
-    if (form.checkValidity()) {
+    function handleSubmit(event) {
       event.preventDefault();
       let status = document.getElementById("cart-form-status");
       let data = new FormData(event.target);
       fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-              'Accept': 'application/json'
-          }
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(responseText => {
+        this.cart = {};
+        this.saveCart();
+        this.updateBadge();
+        this.renderCart();
+        status.innerHTML = 'Thank you! ' + responseText;
+        form.reset()
       })
-        .then(response => {
-          if (response.status === 200) {
-            return response.text();
-          } else {
-            throw new Error('Cannot send form');
-          }
-        })
-        .then(responseText => {
-          form.reset();
-          this.cart = {};
-          this.saveCart();
-          this.updateBadge();
-          this.renderCart();
-          status.innerHTML = 'Thank you! ' + responseText;
-        })
-        .catch(error => status.innerHTML = "Oops! There was a problem submitting your form");
-    } else {
-      window.showAlert('Please fill form correctly', false);
+        .catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      form.addEventListener("submit", handleSubmit);
     }
   }
 }

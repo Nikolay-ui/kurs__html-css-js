@@ -251,3 +251,6 @@
     border: 2px solid #f2aa45;
     cursor: pointer;
 }
+.cart-form__body p {
+    padding: 10px 0;
+}
