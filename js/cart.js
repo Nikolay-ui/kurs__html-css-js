@@ -11,6 +11,8 @@ class Cart {
       .querySelector('.cart__link')
       .addEventListener('click', () => this.renderCart());
     this.cartContainer
+      .querySelector('.order')
+      .addEventListener('click', ev => this.order(ev));
   }
   saveCart() {
     localStorage['cart'] = JSON.stringify(this.cart);
@@ -111,19 +113,17 @@ class Cart {
       window.showAlert('Please choose products to order', false);
       return;
     }
-    const form = this.cartContainer.querySelector('.cart-form__body');
+    const form = this.cartContainer.getElementById("cart-form");
     if (form.checkValidity()) {
-      ev.preventDefault();
-      fetch('order', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          clientName: document.querySelector('#client-name').value,
-          clientEmail: document.querySelector('#client-email').value,
-          cart: this.cart
-        })
+      event.preventDefault();
+      let status = document.getElementById("cart-form-status");
+      let data = new FormData(event.target);
+      fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
       })
         .then(response => {
           if (response.status === 200) {
@@ -138,10 +138,9 @@ class Cart {
           this.saveCart();
           this.updateBadge();
           this.renderCart();
-          window.showAlert('Thank you! ' + responseText);
-          this.cartContainer.querySelector('.cart-form__button-close').click();
+          status.innerHTML = 'Thank you! ' + responseText;
         })
-        .catch(error => showAlert('There is an error: ' + error, false));
+        .catch(error => status.innerHTML = "Oops! There was a problem submitting your form");
     } else {
       window.showAlert('Please fill form correctly', false);
     }
