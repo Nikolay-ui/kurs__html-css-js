@@ -14,11 +14,11 @@ class ProductList {
         [...products]
             .forEach(product => {
                 productListDomString += `<div class="speakers-slider__item">
-        <img src="${product.image}">
-        <span>${product.model}</span>
-        <strong>$${product.price}</strong>
-        <button class="buy" data-id="${product.id}">ADD TO CART</button>
-        </div>`;
+                <img src="${product.image}">
+                <span>${product.model}</span>
+                <strong>$${product.price}</strong>
+                <button class="buy" data-id="${product.id}">ADD TO CART</button>
+                </div>`;
             });
         this.container.innerHTML = productListDomString;
         document.addEventListener('DOMContentLoaded', () => {
