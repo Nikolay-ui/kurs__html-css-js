@@ -11,6 +11,8 @@ class Cart {
       .querySelector('.cart__link')
       .addEventListener('click', () => this.renderCart());
     this.cartContainer
+      .querySelector('.order')
+      .addEventListener('click', ev => this.order(ev));
   }
   saveCart() {
     localStorage['cart'] = JSON.stringify(this.cart);
@@ -106,30 +108,44 @@ class Cart {
       count, cost
     };
   }
-  async function() {
-    const form = this.cartContainer.getElementById("cart-form");
-    function handleSubmit(event) {
-      event.preventDefault();
-      let status = document.getElementById("cart-form-status");
-      let data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
+  async order(ev) {
+    if ((await this.cartLengthAndCost()).count === 0) {
+      window.showAlert('Please choose products to order', false);
+      return;
+    }
+    const form = this.cartContainer.querySelector('.cart-form__body');
+    if (form.checkValidity()) {
+      ev.preventDefault();
+      fetch('order', {
+        method: 'POST',
         headers: {
-          'Accept': 'application/json'
-        }
-      }).then(responseText => {
-        this.cart = {};
-        this.saveCart();
-        this.updateBadge();
-        this.renderCart();
-        status.innerHTML = 'Thank you! ' + responseText;
-        form.reset()
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          clientName: document.querySelector('#client-name').value,
+          clientEmail: document.querySelector('#client-email').value,
+          cart: this.cart
+        })
       })
-        .catch(error => {
-          status.innerHTML = "Oops! There was a problem submitting your form"
-        });
-      form.addEventListener("submit", handleSubmit);
+        .then(response => {
+          if (response.status === 200) {
+            return response.text();
+          } else {
+            throw new Error('Cannot send form');
+          }
+        })
+        .then(responseText => {
+          form.reset();
+          this.cart = {};
+          this.saveCart();
+          this.updateBadge();
+          this.renderCart();
+          window.showAlert('Thank you! ' + responseText);
+          this.cartContainer.querySelector('.cart-form__button-close').click();
+        })
+        .catch(error => showAlert('There is an error: ' + error, false));
+    } else {
+      window.showAlert('Please fill form correctly', false);
     }
   }
 }
