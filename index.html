@@ -34,14 +34,17 @@
                 <nav class="header_navigation">
                     <div class=" header_navigation-img">
                         <img src="img/header/1.svg" alt="Basside">
-                        <div class="header_navigation-burger"><span></span></div>
                     </div>
                     <div class="header_navigation-wrap">
                         <div class="header_navigation-wrap-pages">
-                            <span class="navigation_wrap"><a href="#" class="navigation__link">Headphones</a></span>
-                            <span class="navigation_wrap"><a href="#" class="navigation__link">Speakers</a></span>
-                            <span class="navigation_wrap"><a href="#" class="navigation__link">News</a></span>
-                            <span class="navigation_wrap"><a href="#" class="navigation__link">Testimonials</a></span>
+                            <span class="navigation_wrap"><a href="#"
+                                    class="navigations__speakers navigation__link">Headphones</a></span>
+                            <span class="navigation_wrap"><a href="#"
+                                    class="navigations__news navigation__link">Speakers</a></span>
+                            <span class="navigation_wrap"><a href="#"
+                                    class="navigations__testimonials navigation__link">News</a></span>
+                            <span class="navigation_wrap"><a href="#"
+                                    class="navigations__headphones navigation__link">Testimonials</a></span>
 
                         </div>
                         <div class="header_navigation-wrap-icons">
@@ -69,6 +72,36 @@
             </div>
         </section>
     </header>
+    <!-- modal Cart AK block start -->
+    <div id="cart-icon" class="cart-icon">
+        <a href="#popup-cart" class="cart__link">
+            <img src="img/speakers-slider/icons-shopping-bag.png" alt="shopping-bag">
+            <span id="cart-badge" class="cart-badge badge"></span>
+        </a>
+    </div>
+    <div id="popup-cart" class="popup-cart">
+        <a class="popup__body-body" href="#header"></a>
+        <div class="popup-body container">
+            <div class="popup-content">
+                <div class="popup-header">
+                    <a href="#header" class="popup-close">X</a>
+                    <div class="popup-title">
+                        <h2>Shopping cart</h2>
+                    </div>
+                </div>
+                <div class="popup__product"></div>
+                <div class="popup-form">
+                    <form action="https://formspree.io/f/mlezdjvk" method="POST" id="cart-form" class="cart-form__body">
+                        <input id="client-name" type="name" name="name" placeholder="Name" required>
+                        <input id="client-email" type="email" name="email" placeholder="Email" required>
+                        <button id="cart-form-button" class="cart-form__button order">ORDER</button>
+                        <p id="cart-form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal Cart AK block end -->
     <div class="wrapper">
         <main class="main">
             <!-- block of Andrii Kukhar start -->
@@ -581,11 +614,11 @@
                             </div>
                         </div>
                         <div class="contacts-form__form">
-                            <form action="https://formspree.io/f/mrgjbbdb" method="POST" id="my-form"
+                            <form action="https://formspree.io/f/mrgjbbdb" method="POST" id="subcribe-form"
                                 class="form__body">
                                 <input id="email" type="email" name="email" placeholder="Email" required>
-                                <button id="my-form-button" class="form__button" value="SUBSCRIBE">SUBSCRIBE</button>
-                                <p id="my-form-status"></p>
+                                <button id="subcribe-form-button" class="form__button">SUBSCRIBE</button>
+                                <p id="subcribe-form-status"></p>
                             </form>
                         </div>
                     </div>
@@ -666,13 +699,16 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/products-service.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product-speakers.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/fsn-featured-items.js"></script>
     <script src="js/fsn-sale-items.js"></script>
     <script src="js/fsn-new-items.js"></script>
     <script src="js/fsn-tabs-items.js"></script>
-    <script src="js/slick.min.js"></script>
     <script src="js/sliders-brands.js"></script>
-    <script src="js/product-speakers.js"></script>
     <script src="js/our-customers.js"></script>
     <script src="js/main-headphones.js"></script>
     <script src="js/main-headphones-carousel.js"></script>
