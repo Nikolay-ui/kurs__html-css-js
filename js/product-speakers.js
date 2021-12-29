@@ -11,47 +11,6 @@ class ProductList {
     async renderProducts() {
         let productListDomString = '';
         const products = await this.productService.getProducts();
-        document.addEventListener('DOMContentLoaded', () => {
-            $(document).ready(function () {
-                $('.speakers-slider').slick({
-                    arrows: true,
-                    dots: false,
-                    adaptiveHeight: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    speed: 700,
-                    easing: 'linear',
-                    infinite: true,
-                    initialSlide: 1,
-                    autoplay: false,
-                    autoplaySpeed: 1500,
-                    pauseOnFocus: true,
-                    pauseOnHover: true,
-                    pauseOnDotsHover: true,
-                    rows: 1,
-                    slidesPerRows: 1,
-                    responsive: [
-                        {
-                            breakpoint: 1068,
-                            settings: {
-                                slidesToShow: 3
-                            }
-                        },
-                        {
-                            breakpoint: 768,
-                            settings: {
-                                slidesToShow: 2
-                            }
-                        }, {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1
-                            }
-                        }
-                    ],
-                });
-            });
-        });
         [...products]
             .forEach(product => {
                 productListDomString += `<div class="speakers-slider__item">
@@ -62,8 +21,46 @@ class ProductList {
                 </div>`;
             });
         this.container.innerHTML = productListDomString;
+        $(document).ready(function () {
+            $('.speakers-slider').slick({
+                arrows: true,
+                dots: false,
+                adaptiveHeight: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                speed: 700,
+                easing: 'linear',
+                infinite: true,
+                initialSlide: 1,
+                autoplay: false,
+                autoplaySpeed: 1500,
+                pauseOnFocus: true,
+                pauseOnHover: true,
+                pauseOnDotsHover: true,
+                rows: 1,
+                slidesPerRows: 1,
+                responsive: [
+                    {
+                        breakpoint: 1068,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }, {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ],
+            });
+        });
     }
-
     async addEventListeners() {
         document
             .querySelectorAll(
@@ -80,7 +77,4 @@ class ProductList {
         const id = button.dataset.id;
         this.cart.addProduct(id);
     }
-    function() {
-
-    };
 };
