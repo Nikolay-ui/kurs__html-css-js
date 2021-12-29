@@ -17,9 +17,6 @@
 
 
 @media (max-width: 990px) {
-  body._lock {
-    overflow: hidden;
-}
 
   section nav .header_navigation-img {
     position: relative;
@@ -32,15 +29,17 @@
     align-items: center;
     padding: 30px 0;
     z-index: 10;
+    overflow: hidden;
   }
   section nav .header_navigation-burger {
     display: block;
     position: relative;
     width: 24px;
     height: 16px;
-    padding: 12px;
+    padding: 8px;
     cursor: pointer;
     z-index: 5;
+    
   }
   section nav .header_navigation-burger span,
   section nav .header_navigation-burger::before,
@@ -94,10 +93,12 @@
     margin: auto;
   }
 
+  section  nav .header_navigation-burger.active{
+    display: block;
+  }
   section nav .header_navigation-wrap.active {
     top: 0;
   }
-
   section nav .header_navigation.active {
     top: 0;
   }
@@ -114,11 +115,32 @@
     z-index: 10;
     padding-top: 200px;
   }
-  
-
-  section nav .navigation-pages a:hover {
-    color: #2a2a2a;
-  }
+  section nav .header_navigation-wrap-pages a {
+    position: relative;
+    font-size: 0.91rem;
+    color: #2a2a2a ;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.5rem;
+}
+section nav .header_navigation-wrap-pages a:hover {
+    color: #2a2a2a ;
+    cursor: pointer;
+}
+section nav .header_navigation-wrap-pages a:after{
+    display: block;
+    position: absolute;
+    left: 0; 
+    width: 0;
+    height: 3px; 
+    border-radius: 0.1rem;
+    background-color: #2a2a2a; 
+    content: "";
+    transition: width 0.2s ease-in;
+}
+section nav .header_navigation-wrap-pages a:hover:after{
+    width: 100%;
+}
 
   section nav .header_navigation-wrap-icons {
     position: relative;
@@ -129,7 +151,6 @@
     align-items: center;
     margin: auto;
   }
-
   section nav .header_navigation-wrap-icons img {
     max-width: 28px;
     border-radius: 0.4rem;
