@@ -1,7 +1,7 @@
 .cart__link {
     position: fixed;
-    top: 20%;
-    right: 10px;
+    top: 30%;
+    right: 15%;
     padding: 25px;
     border-radius: 50%;
     background-color: rgba(248, 248, 248, 0.644);
@@ -18,16 +18,15 @@
     cursor: pointer;
 }
 .cart__link img {
-    width: 25px;
+    width: 40px;
 }
 .cart-badge {
     position: fixed;
-    font-size: 7px;
+    top: 30%;
+    right: 13%;
+    font-size: 14px;
     color: black;
     font-weight: 100;
-    border-radius: 50%;
-    background-color: rgb(0, 72, 228);
-    padding: 10px;
 }
 .popup-cart {
     position: fixed;
