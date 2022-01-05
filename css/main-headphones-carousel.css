@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 .main-headphones-carousel {
     display: flex;
     flex-direction: row;
@@ -11,23 +13,39 @@
 }
 
 .main-headphones-carousel__button {
-    width: 36px;
-    height: 48px;
-    border-radius: 50%;
-}
-.back {
     position: absolute;
+    justify-content: center;
+    background-color: gray;
+    color:white;
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 50%;
+    padding: 0px 18px 5px 18px;
+    
+}
+
+.back {
     top: 43%;
-    left: 6%;
+    left: 3%;
 }
 
 .forward {
-    position: absolute;
-    justify-content: center;
     top: 43%;
-    left: 92%;
+    left: 95%;
 }
 
 .main-headphones-carousel__slide {
     display: flex;
 }
+
+@media (min-width: 1200px) {
+    .main-headphones-carousel__button {
+        background-color: transparent;
+        font-size: 50px;
+        color: black;
+    }
+}
+
+
+
+
