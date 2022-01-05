@@ -5,19 +5,27 @@
     position: relative;
 }
 
+.main-headphones-carousel__slide img {
+    height: 206px;
+    max-width: 206px;
+}
+
 .main-headphones-carousel__button {
     width: 36px;
     height: 48px;
     border-radius: 50%;
 }
 .back {
-    top: 169px;
-    left: 186px;
+    position: absolute;
+    top: 43%;
+    left: 6%;
 }
 
 .forward {
-    top: 169px;
-    left: 534px;
+    position: absolute;
+    justify-content: center;
+    top: 43%;
+    left: 92%;
 }
 
 .main-headphones-carousel__slide {
