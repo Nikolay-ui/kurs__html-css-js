@@ -90,15 +90,14 @@
                         <h2>Shopping cart</h2>
                     </div>
                 </div>
-                <div class="popup__product"></div>
-                <div class="popup-form">
-                    <form action="https://formspree.io/f/mlezdjvk" method="POST" id="cart-form" class="cart-form__body">
-                        <input id="client-name" type="name" name="name" placeholder="Name" required>
-                        <input id="client-email" type="email" name="email" placeholder="Email" required>
-                        <button id="cart-form-button" class="cart-form__button order">ORDER</button>
-                        <p id="cart-form-status"></p>
-                    </form>
-                </div>
+                <form action="#" id="cart-form" name="cartForm" class="cart-form__body">
+                    <div class="popup__product"></div>
+                    <input id="name" class="popup__product-input" type="text" name="name" placeholder="Name" required>
+                    <input id="email" class="popup__product-input" type="text" name="email" placeholder="Email"
+                        required>
+                    <input type="submit" id="cart-form-button" class="cart-form__button order" value="ORDER">
+                    <!-- <input type="hidden" name="act" value="order"> -->
+                </form>
             </div>
         </div>
     </div>
@@ -181,7 +180,7 @@
                     <h3>Headphones Sale</h3>
                     <div class="speakers-links__right">
                         <a href="#speakers">LEARN MORE</a>
-                        <div class="speakers-links__right__line"></div>
+                        <div class="speakers-links__right-line"></div>
                     </div>
                 </div>
             </div>
@@ -317,9 +316,10 @@
                 <img class="headphones-logo" src="img/headphones/logo-headphones.svg" alt="Headphones logo">
                 <p class="p">Shop your favorite headphones or contact us for help with the choice.</p>
                 <div class="main-headphones-carousel">
-                    <button class="main-headphones-carousel__button back"> < </button>
-                    <div class="main-headphones-carousel__slide"></div>
-                    <button class="main-headphones-carousel__button forward"> > </button>
+                    <button class="main-headphones-carousel__button back">
+                        < </button>
+                            <div class="main-headphones-carousel__slide"></div>
+                            <button class="main-headphones-carousel__button forward"> > </button>
                 </div>
                 <div class="headphones-all-cards"></div>
             </div>
@@ -331,7 +331,7 @@
                     <div class="products-of-carousel__slide"></div>
                     <button class="headphones-carousel-button forward-button">Forward</button>
                 </div>
-            </div>    
+            </div>
             <!-- block of Andrii Kukhar start -->
             <div id="speakers" class="speakers-slider-block">
                 <h2>Speakers</h2>
@@ -391,7 +391,6 @@
                         <img src="img/our-customers-and-slider/voice-sound.svg" alt="voice-sound">
                         <p>We're so excited to receive great testimonials from our customers!</p>
                     </div>
-                    <!-- slider -->
                     <div class="flex">
                         <div class="flex__column">
                             <div class="slider"></div>
@@ -491,7 +490,7 @@
                         <div class="contacts-form__form">
                             <form action="https://formspree.io/f/mrgjbbdb" method="POST" id="subcribe-form"
                                 class="form__body">
-                                <input id="email" type="email" name="email" placeholder="Email" required>
+                                <input id="email" type="text" name="email" placeholder="Email" required>
                                 <button id="subcribe-form-button" class="form__button">SUBSCRIBE</button>
                                 <p id="subcribe-form-status"></p>
                             </form>
