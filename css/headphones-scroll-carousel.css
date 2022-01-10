@@ -1,0 +1,13 @@
+.headphones-scroll-carousel{
+    display: flex;
+}
+.back-button {
+    background: url("../img/our-customers-and-slider/left-icon.png") 0 0 / 100% no-repeat;
+}
+.forward-button {
+    background: url("../img/our-customers-and-slider/right-icon.png") 0 0 / 100% no-repeat;
+}
+.headphones-carousel-button{
+    display: flex;
+    margin-top: 400px;  
+}
