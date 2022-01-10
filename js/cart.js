@@ -41,9 +41,13 @@ class Cart {
         </div>
         `;
     }
+    const cartSend = JSON.stringify(this.cart);
     cartDomSting += `
         <div class="product__total-sum">
         <div class=""><strong>TOTAL</strong></div>
+        <input id="productOrder" type="hidden" defaultValue="${localStorage['cart']}">
+        <input id="productCart" type="hidden" value="${cartSend}">
+        <input id="quantity" type="hidden" value="${total.toFixed(2)}">
         <div class=""><strong>$${total.toFixed(2)}</strong></div>
         </div>`;
     this.cartContainer.querySelector(
@@ -110,22 +114,15 @@ class Cart {
   }
   async order(ev) {
     if ((await this.cartLengthAndCost()).count === 0) {
-      window.showAlert('Please choose products to order', false);
+      alert('Please choose products to order', false);
       return;
     }
     const form = this.cartContainer.querySelector('.cart-form__body');
     if (form.checkValidity()) {
       ev.preventDefault();
-      fetch('order', {
+      await fetch('sendmail.php', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          clientName: document.querySelector('#client-name').value,
-          clientEmail: document.querySelector('#client-email').value,
-          cart: this.cart
-        })
+        body: new FormData(form)
       })
         .then(response => {
           if (response.status === 200) {
@@ -140,11 +137,12 @@ class Cart {
           this.saveCart();
           this.updateBadge();
           this.renderCart();
-          window.showAlert('Thank you! ' + responseText);
+          alert('Thank you! For You Order. ' + responseText);
+          this.cartContainer.querySelector('.popup-close').click();
         })
-        .catch(error => showAlert('There is an error: ' + error, false));
+        .catch(error => alert(`There is an error: ${error}`, false));
     } else {
-      window.showAlert('Please fill form correctly', false);
+      alert('Please fill form correctly', false);
     }
   }
 }
