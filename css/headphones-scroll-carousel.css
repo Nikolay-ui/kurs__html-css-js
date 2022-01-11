@@ -1,13 +1,21 @@
-.headphones-scroll-carousel{
-    display: flex;
+.headphones-scroll-carousel{ 
+    position: relative;  
 }
 .back-button {
     background: url("../img/our-customers-and-slider/left-icon.png") 0 0 / 100% no-repeat;
+    left: 4%;
 }
 .forward-button {
+    right: 5%;
     background: url("../img/our-customers-and-slider/right-icon.png") 0 0 / 100% no-repeat;
 }
-.headphones-carousel-button{
-    display: flex;
-    margin-top: 400px;  
+.headphones-carousel-button{  
+    position: absolute;
+    top: 50%;
+    margin: -20px 0 0 0;
+    z-index: 10;
+}
+.button-text {
+    color: rgba(139, 8, 8, 0);
+    font-size: 8px;
 }
