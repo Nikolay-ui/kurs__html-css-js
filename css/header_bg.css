@@ -42,7 +42,14 @@
     background-color: black;
     transition: 1.4s;
   }
-  
+  .bg_links_shop{
+    color: #2a2a2a;
+    text-decoration: none;
+  }
+  .bg_links_shop:hover {
+    transition: 1.4s;
+    text-decoration: underline;
+  }
 @media(min-width: 991px) {
     .bg_text {
     display: flex;
